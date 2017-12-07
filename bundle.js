@@ -67,6 +67,13 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+// By prefixing loaders to a module request, the module went through a loader pipeline. 
+// These loaders transform the file content in specific ways. 
+// After these transformations are applied, the result is a JavaScript module.
+
+// require("!style-loader!css-loader!./style.css");
+
+// Run with: webpack ./entry.js bundle.js --module-bind 'css=style!css'
 __webpack_require__(1);
 
 document.write(__webpack_require__(6));
