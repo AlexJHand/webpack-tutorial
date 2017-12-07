@@ -73,7 +73,7 @@
 
 // require("!style-loader!css-loader!./style.css");
 
-// Run with: webpack ./entry.js bundle.js --module-bind 'css=style!css'
+// Run with: webpack ./entry.js bundle.js --module-bind 'css=style-loader!css-loader'
 __webpack_require__(1);
 
 document.write(__webpack_require__(6));
